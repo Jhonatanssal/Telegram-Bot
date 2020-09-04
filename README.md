@@ -2,42 +2,47 @@
 
 # Telegram-Bot
 
-![screenshot](./Screenshot.png)
+![screenshot](./img/screenshot1.png)
+![screenshot](./img/screenshot2.png)
+![screenshot](./img/screenshot3.png)
 
-> This is a script file to house our enumerable methods using the Ruby programming language.
+> This is a script file to house my Ruby Capstone project "Telegram Bot".
 
 ## Built With
 
 - Ruby -v2.7.0p0
-
+- Telegram-bot
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-- Go to the main page of te repo.
-- Press the "Code" button and get the repo link.
-- Clone it using git.
+- Open the terminal and clone the repository with the next commands:
+- Clone it with HTTPS using the command `git clone https://github.com/jssarrazolaa/Telegram-Bot.git`.
+- Clone it with SSH using the command `git clone git@github.com:jssarrazolaa/Telegram-Bot.git`.
 
 ### Prerequisites
 
-- Ruby -v2.7.0p0
-
+- Ruby -v 2.7.x
+- Telegram account
 
 ### Setup
- - Open a terminal
- - Copy this code : 
-        ```
-        git clone https://github.com/sanadwj/enumerables.git
-        ```
-- Run the program with this code :
-        ```
-        ruby enumerable.rb
-        ```
+
+- Open the terminal
+- Go to the root folder of the repository.
+- Run the comman `bundle install`
+- Run the program with this code: `ruby bin/main.rb`
 
 ### Usage
 
-- Personal Project - Create a script file to house our methods using Ruby in the best approach in our opinion . 
+- Follow the instuctions:
+
+- Copy the URL you will see in the terminal and open it in the browser.
+- The URL will open a Telegram chat with the bot.
+- Enter the command `start` to see how the Bot works.
+- Enter `time *country*` to see the current time in that country and the difference with the UTC time.
+- Enter `stop` or `exit` to turn off the bot.
+
 ### Automated Tests
 
 - In root directory copy this:
@@ -64,16 +69,12 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Cecilia Benitez**
 
-- Github: [@Ceci007](https://github.com/Ceci007)
-- LinkenIn:[LinkenIn](https://www.linkedin.com/in/cecilia-ben%C3%ADtez-casaccia-498669185/) 
+👤 **Jhonatan Sarrazola**
 
-👤 **Sanad Walid Abujbara**
-
-- Github: [@sanadwj](https://github.com/githubhandle)
-- Twitter: [@sandooog](https://twitter.com/sandooog)
-- Linkedin: [sanad-abujbara](https://linkedin.com/in/sanad-abujbara)
+- Github: [@jssarrazolaa](https://github.com/jssarrazolaa)
+- Twitter: [@StevenAlvarez_](https://twitter.com/StevenAlvarez_)
+- Linkedin: [Jhonatan Sarrazola](https://www.linkedin.com/in/jhonatan-sarrazola-6a46a01a5/)
 
 ## 🤝 Contributing
 
@@ -86,8 +87,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse Team 137 (The Vulcans)
-- Microverse Team 139 (The Thanatos)
+- Microverse Team 138 (The Atlas)
 
 ## 📝 License
 

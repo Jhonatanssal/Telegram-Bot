@@ -1,4 +1,7 @@
-class Time_output
+# rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/ClassLength
+
+class Time_Output
   attr_reader :list
   @value = nil
 
@@ -106,7 +109,7 @@ class Time_output
       Ivory_Coast: 0,
       Jamaica: -5,
       Japan: -9,
-      Jordan:2,
+      Jordan: 2,
       Kenya: +3,
       Korea_North: 9,
       Korea_South: 9,
@@ -203,7 +206,5 @@ class Time_output
   end
 end
 
-=begin others = Time_output.new
-other = others.selected_country("hey".to_sym)
-puts other 
-=end
+# rubocop:enable Metrics/MethodLength
+# rubocop:enable Metrics/ClassLength
