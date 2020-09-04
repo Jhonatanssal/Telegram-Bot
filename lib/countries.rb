@@ -1,7 +1,7 @@
 # rubocop:disable Metrics/MethodLength
 # rubocop:disable Metrics/ClassLength
 
-class Time_Output
+class TimeOutput
   attr_reader :list
   @value = nil
 
@@ -14,7 +14,7 @@ class Time_Output
     @list = {
       France: 1,
       Russia: 3,
-      United_States: 6,
+      United_States: -6,
       Australia: 8,
       United_Kongdom: 0,
       Canada: -7,
