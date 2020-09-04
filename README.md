@@ -55,16 +55,21 @@ To get a local copy up and running follow these simple example steps.
             ```
 - If one of the methods is not working it will show you this error example:
 
-            ```
-            Enumerable my_inject if the argument is a sympol returns acum
-                 Failure/Error: expect(arr.my_inject(:*)).to eq(2)
-                 
-                   expected: 2
-                        got: 24
-                 
-                   (compared using ==)
-                 # ./enumerable_spec.rb:133:in `block (3 levels) in <top (required)>'
-            ```
+            Failures:
+
+               1) Methods token returns the token
+                    Failure/Error: expect(method.token).to be false
+                    
+                    expected false
+                         got #<String:1320> => "1169735408:AAFB1CCrgujdVmwUANIQgS8MTKGvUy4ZrYk"
+                    # ./methods_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+               Finished in 0.01663 seconds (files took 0.09608 seconds to load)
+               3 examples, 1 failure
+
+               Failed examples:
+
+               rspec ./methods_spec.rb:21 # Methods token returns the token
                         
 
 ## Authors
