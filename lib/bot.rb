@@ -51,14 +51,15 @@ def time(input)
   @h = @t.strftime('%k').to_i
   @n = @t.strftime(':%M')
   @m = @ans[@input].to_s
-  @y =  if (@h.to_i + @ans[@input].to_i) >= 24
-          @y = @h.to_i + @ans[@input].to_i - 24
-        elsif (@h.to_i + @ans[@input].to_i) < 0
-          @y = @h.to_i + @ans[@input].to_i + 24
-        else
-          @y = @h.to_i + @ans[@input].to_i
-        end
-        [@y, @n, @tt, @m]
+  @r = @h.to_i + @ans[@input].to_i
+  @y = if @r >= 24
+         @h.to_i + @ans[@input].to_i - 24
+       elsif (@h.to_i + @ans[@input].to_i).negative?
+         @h.to_i + @ans[@input].to_i + 24
+       else
+         @h.to_i + @ans[@input].to_i
+       end
+  [@y, @n, @tt, @m]
 end
 
 # rubocop:enable Layout/LineLength

@@ -1,7 +1,6 @@
 require_relative './countries.rb'
 
 class Methods
-  attr_reader :token 
   def valid(input)
     others = TimeOutput.new
     country = others.countries
@@ -12,9 +11,8 @@ class Methods
     else
       str.capitalize!
     end
-    if country.include?(str.to_sym)
-      return str.to_sym
-    end
+    return str.to_sym if country.include?(str.to_sym)
+
     false
   end
 
