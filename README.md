@@ -53,10 +53,7 @@ When runing:
             ```
             cd spec
             ```
-- In your terminal copy this code to test the methods:
-            ```
-            rspec enumerable_spec.rb
-            ```
+- In your terminal copy this code to test the methods: `rspec methods_spec.rb`, `rspec countries_spec.rb` or `rspec phrases_spec.rb` 
 - If one of the methods is not working it will show you this error example:
 
             Failures:
