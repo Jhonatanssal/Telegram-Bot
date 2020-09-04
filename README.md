@@ -11,15 +11,17 @@
 ## Built With
 
 - Ruby -v2.7.0p0
+- Rubocop
+- Rspec
 - Telegram-bot
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy, copy up and running follow these simple example steps.
 
-- Open the terminal and clone the repository with the next commands:
-- Clone it with HTTPS using the command `git clone https://github.com/jssarrazolaa/Telegram-Bot.git`.
-- Clone it with SSH using the command `git clone git@github.com:jssarrazolaa/Telegram-Bot.git`.
+- Open the terminal and clone the repository with one of the next commands:
+- Clone it if using HTTPS with the command `git clone https://github.com/jssarrazolaa/Telegram-Bot.git`
+- Clone it if using SSH with the command `git clone git@github.com:jssarrazolaa/Telegram-Bot.git`
 
 ### Prerequisites
 
@@ -29,18 +31,20 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Open the terminal
-- Go to the root folder of the repository.
+- Go to the root folder of the cloned repository.
 - Run the comman `bundle install`
 - Run the program with this code: `ruby bin/main.rb`
+When runing:
+- Go to the page [CountryTime]('https://web.telegram.org/#/im?p=@CountryTimebot') and folow the instructions below in Usage section.
 
 ### Usage
 
 - Follow the instuctions:
 
-- Copy the URL you will see in the terminal and open it in the browser.
-- The URL will open a Telegram chat with the bot.
+- The URL above will open a Telegram chat with the bot.
 - Enter the command `start` to see how the Bot works.
-- Enter `time *country*` to see the current time in that country and the difference with the UTC time.
+- Enter `phrase` to receive a random phrase.
+- Enter `time Country_Name` to see the current time in that country and the difference with the UTC time.
 - Enter `stop` or `exit` to turn off the bot.
 
 ### Automated Tests
@@ -72,7 +76,7 @@ To get a local copy up and running follow these simple example steps.
                rspec ./methods_spec.rb:21 # Methods token returns the token
                         
 
-## Authors
+## Author
 
 
 👤 **Jhonatan Sarrazola**

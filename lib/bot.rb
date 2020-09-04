@@ -23,8 +23,6 @@ class Bot
           @quote = Phrases.new
           @phrase = @quote.select_phrase
           bot.api.send_message(chat_id: message.chat.id, text: "Hello #{message.from.first_name} here is your phrase:\n\n#{@phrase}.\n\nHave a very good day!")
-        when /stop/i, /exit/i, /end/i
-          bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}", date: message.date)
         when /time/i
           @txt = message.text
           @method = Methods.new
@@ -35,6 +33,8 @@ class Bot
           else
             bot.api.send_message(chat_id: message.chat.id, text: 'No valid country, try again', date: message.date)
           end
+        when /stop/i, /exit/i, /end/i
+          bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}", date: message.date)
         else bot.api.send_message(chat_id: message.chat.id, text: "Invalid entry, #{message.from.first_name}, you need to use  /start,  /stop , or /time and a valid Capitalized country name.", date: message.date)
         end
       end
@@ -51,12 +51,14 @@ def time(input)
   @h = @t.strftime('%k').to_i
   @n = @t.strftime(':%M')
   @m = @ans[@input].to_s
-  @y = if (0..4).include?(@h)
-         @h.to_i + @ans[@input].to_i + 24
-       else
-         @h.to_i + @ans[@input].to_i
-       end
-  [@y, @n, @tt, @m]
+  @y =  if (@h.to_i + @ans[@input].to_i) >= 24
+          @y = @h.to_i + @ans[@input].to_i - 24
+        elsif (@h.to_i + @ans[@input].to_i) < 0
+          @y = @h.to_i + @ans[@input].to_i + 24
+        else
+          @y = @h.to_i + @ans[@input].to_i
+        end
+        [@y, @n, @tt, @m]
 end
 
 # rubocop:enable Layout/LineLength
